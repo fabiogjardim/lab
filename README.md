@@ -1,7 +1,5 @@
 # LAB BIG DATA ECOSYSTEM 
 
-Ambiente para aula dos principais framework de um ambiente moderno de dados utilizando docker.
- 
 
 ## PRÉ-REQUISITOS
 #### Instalar o git e o Docker
