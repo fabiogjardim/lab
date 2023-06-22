@@ -12,11 +12,11 @@ Ambiente para aula dos principais framework de um ambiente moderno de dados util
    * Para executar todo o ambiente, o servidor/host deve possuir pelo menos 16GB de memória.
     
 #### Em um terminal/DOS/PowerShell, realizar o clone do projeto no github.
-          git clone https://github.com/fabiogjardim/mds.git
+          git clone https://github.com/fabiogjardim/lab.git
 
 #### Ao realizar o clone do repositório, o diretória lab será criado em sua máquina local.
 
-#### Em um terminal/DOS/PowerShell, entre no diretório lab que foi criado com o clone do repositório e digite o comando abaixo para baixar as imagens do Docker Hub
+#### Ainda no terminal/DOS/PowerShell, entre no diretório lab que foi criado com o clone do repositório e digite o comando abaixo para baixar as imagens do Docker Hub
 
           docker-compose up -d        
 
