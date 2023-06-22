@@ -1,12 +1,10 @@
-# BIG DATA ECOSYSTEM - MODERN DATA STACK COM DOCKER
+# LAB BIG DATA ECOSYSTEM 
 
-Ambiente para estudo dos principais framework de um ambiente moderno de dados utilizando docker.
+Ambiente para aula dos principais framework de um ambiente moderno de dados utilizando docker.
  
 
-![mds](image/front.png)
-
-## SOFTWARES NECESSÁRIOS
-#### Para a criação e uso do ambiente vamos utilizar o git e o Docker 
+## PRÉ-REQUISITOS
+#### Instalar o git e o Docker
    * Instalação do Docker Desktop no Windows [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) ou o docker no [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
    *  [Instalação do git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
    
@@ -15,26 +13,14 @@ Ambiente para estudo dos principais framework de um ambiente moderno de dados ut
    * Para executar todo o ambiente, o servidor/host deve possuir pelo menos 16GB de memória.
    * É indicado subir apenas os containers para o worload que será utilizado/testado.
 
-
-INICIANDO O AMBIENTE*
-
 #### Em um terminal/DOS/PowerShell, realizar o clone do projeto no github.
           git clone https://github.com/fabiogjardim/mds.git
 
-#### Ao realizar o clone do repositório, o diretória mds será criado em sua máquina local.
+#### Ao realizar o clone do repositório, o diretória lab será criado em sua máquina local.
 
-   
-## EXEMPLOS DE COMO INICIR O AMBIENTE
+### Em um terminal/DOS/PowerShell, entre no diretório lab que foi criado com o clone e digite o comando abaixo para baixar as imagens do Docker Hub
 
-  *No Windows abrir PowerShell, do Linux um terminal e acessar o diretório mds*
-  
-### Para iniciar um ambiente com Data Lake e Spark
-
-          docker-compose up -d minio spark-worker        
-
-### Para iniciar um ambiente com Ingestão de dados com CDC no Postgres utilizando Kafka
- 
-         docker-compose up -d minio kafka-broker kafka-connect nifi postgres
+          docker-compose up -d        
 
 ## SOLUCIONANDO PROBLEMAS 
 
@@ -72,13 +58,14 @@ INICIANDO O AMBIENTE*
 * Pinot *http://localhost:9000*
 * Nifi *http://localhost:9090*
 * Kafka Control Center *http://localhost:9021*
-* Airflow *http://localhost:8180*
 * Elastic *http://localhost:9200*
 * Metabase *http://localhost:3000*
 * Kibana *http://localhost:5601*
 * Superset *http://localhost:8088*
 * Trino *http://localhost:8080*
-* CloudBeaver *http://localhost:8010*
+* Hadoop *http://localhost:9870*
+* Hive *http://localhost:10002*
+
 
 ## Usuários e senhas
 
@@ -106,7 +93,7 @@ INICIANDO O AMBIENTE*
     Usuário: admin
     Senha: admin
         
-   ##### CloudBeaver
+   ##### Hue
     Usuário: admin
     Senha: admin
    
@@ -115,19 +102,4 @@ INICIANDO O AMBIENTE*
 
 [Docker Hub](https://hub.docker.com/u/fjardim)
 
-## Documentação oficial dos ambientes em container
 
-* [Cloudbeave](https://dbeaver.com/docs/cloudbeaver/Run-Docker-Container/)
-* [Trino](https://trino.io/docs/current/installation/containers.html)
-* [Superset](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose/)
-* [Metabase](https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker)
-* [DeltaLake](https://delta.io/)
-* [Minio](https://min.io/docs/minio/container/operations/installation.html)
-* [Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
-* [Postgres](https://github.com/docker-library/postgres)
-* [Pinot](https://docs.pinot.apache.org/basics/getting-started/running-pinot-in-docker)
-* [Jupyter Spark](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/specifics.html)
-* [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
-* [Kafka Confluent](https://docs.confluent.io/platform/current/installation/docker/installation.html)
-* [Debezium](https://debezium.io/documentation/reference/stable/docker.html)
-* [Nifi](https://hub.docker.com/r/apache/nifi)
