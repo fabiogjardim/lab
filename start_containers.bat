@@ -5,6 +5,6 @@ echo "limpando containers e iniciando ambiente"
 FOR /f "tokens=*" %%i IN ('docker ps -q -a') DO docker stop %%i
 FOR /f "tokens=*" %%i IN ('docker ps -q -a') DO docker rm %%i
 echo "inicinado containers"
-docker-compose up -d datanode namenode hue spark-master spark-worker hive trino minio
+docker-compose up -d datanode namenode hue spark-master hive trino minio kafka-control-center nifi
  
 pause
