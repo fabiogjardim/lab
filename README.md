@@ -79,7 +79,7 @@
    
    ##### Minio
     Usuário: admin
-    Senha: admin
+    Senha: minioadmin
        
    ##### Pinot
     Usuário: admin
